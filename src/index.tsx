@@ -1,6 +1,5 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {
-  useFlipper,
   useReduxDevToolsExtension,
 } from '@react-navigation/devtools';
 import {
@@ -219,7 +218,6 @@ export default function App() {
   const navigationRef = useNavigationContainerRef();
 
   useReduxDevToolsExtension(navigationRef);
-  useFlipper(navigationRef);
 
   if (!isReady) {
     return null;
